@@ -10,7 +10,7 @@ body::-webkit-scrollbar-thumb{
     
 }
 body::-webkit-scrollbar{
-    width: 10px;
+    width: 17px;
     background-color: #BEA888;
 }
 header{
