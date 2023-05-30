@@ -369,7 +369,7 @@ let totalScore = () =>{
     }
     let meta =document.createElement("meta")
     meta.setAttribute("http-equiv", "refresh")
-    meta.setAttribute("content","0")
+    meta.setAttribute("content","0; url=./index.html")
     body.appendChild(meta)
      
 }

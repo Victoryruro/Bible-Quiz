@@ -7,143 +7,61 @@
     <meta name="theme-color" content="rgba(105, 105, 105, 0.945)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bible Quiz 🏆</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Bible Quiz</title>
+    <style>
+        body{
+            margin: 0px auto;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #FFF8E8;
+            justify-content: space-between;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25vh;
+            
+        }
+        button{
+            width: 150px;
+            padding: 10px 20px;
+            background-color: #BEA888;
+            border: none;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 20px 6px #BEA888;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #060501;
+            font-weight: 700;
+            text-align: center;
+            
+        }
+        footer{
+            align-self: flex-end;
+            margin-bottom: 0px;
+            background-color: #BEA888;
+            height: 9vh;
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 600;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
-        <h1>Bible Quiz</h1>
-        <h6>How well do you know the Bible ?</h6>
-        <!-- <p>Note: You have just  <strong>45 seconds</strong></p> -->
-
-    </header>
     <main>
-        <article>
-           
-
-            <section class="section1">
-                <p id="Q1">
-                  1. How old was methuselah when he died ?
-                </p>
-                <div id="optionsForQ1">
-                    <input type="radio" name="year" id="id1a" value="977"><label for="id1a">977</label> <br>
-                    <input type="radio" name="year" id="id1b" value="969"><label for="id1b">969</label> <br>
-                    <input type="radio" name="year" id="id1c" value="966" ><label for="id1c">966</label><br>
-                    <input type="radio" name="year" id="id1d" value="669" ><label for="id1d">669</label> <br>
-                </div>
-                
-            </section>
-            <section class="section2">
-                <p id="Q2">
-                    2. Who is Abraham's nephew ?
-                </p>
-                <div id="optionsForQ2">
-                    <input type="radio" name="mountain" id="id2a" value="ishmeal"><label for="id2a">ishmeal</label> <br>
-                    <input type="radio" name="mountain" id="id2b" value="lot"><label for="id2b">lot</label> <br>
-                    <input type="radio" name="mountain" id="id2c" value="Noah" ><label for="id2c">Noah</label><br>
-                    <input type="radio" name="mountain" id="id2d" value="Isaac" ><label for="id2d">Isaac</label> <br>
-                </div>
-
-            </section>
-            <section class="section3">
-                <p id="Q3">
-                    3. How old was Jesus when He started His ministry ?
-                </p>
-                <div id="optionsForQ3">
-                    <input type="radio" name="firstMan" id="id3a" value="28"><label for="id3a">28</label> <br>
-                    <input type="radio" name="firstMan" id="id3b" value="35"><label for="id3b">35</label> <br>
-                    <input type="radio" name="firstMan" id="id3c" value="30" ><label for="id3c">30</label><br>
-                    <input type="radio" name="firstMan" id="id3d" value="20" ><label for="id3d">20</label> <br>
-                </div>
-
-            </section>
-            <section class="section4">
-                <p id="Q4">
-                    4. What is the last word in proverbs?
-                </p>
-                <div id="optionsForQ4">
-                    <input type="radio" name="wiseMan" id="id4a" value="amen"><label for="id4a">amen</label> <br>
-                    <input type="radio" name="wiseMan" id="id4b" value="praise the Lord"><label for="id4b">praise the Lord</label> <br>
-                    <input type="radio" name="wiseMan" id="id4c" value="wall" ><label for="id4c">wall</label><br>
-                    <input type="radio" name="wiseMan" id="id4d" value="gates" ><label for="id4d">gates</label> <br>
-                </div>
-
-            </section>
-            <section class="section5">
-                <p id="Q5">
-                    5.Who is the mother of timothy ?
-                </p>
-                <div id="optionsForQ5">
-                    <input type="radio" name="books" id="id5a" value="lois"><label for="id5a">lois</label> <br>
-                    <input type="radio" name="books" id="id5b" value="ruth"><label for="id5b">ruth</label> <br>
-                    <input type="radio" name="books" id="id5c" value="eunice" ><label for="id5c">eunice</label><br>
-                    <input type="radio" name="books" id="id5d" value="rebecca" ><label for="id5d">rebecca</label> <br>
-                </div>
-
-            </section>
-            <section class="section6">
-                <p id="Q6">
-                    6.Who is the father of samuel ?
-                </p>
-                <div id="optionsForQ6">
-                    <input type="radio" name="samuel" id="id6a" value="zachariah"><label for="id6a">zachariah</label> <br>
-                    <input type="radio" name="samuel" id="id6b" value="salmon"><label for="id6b">salmon</label> <br>
-                    <input type="radio" name="samuel" id="id6c" value="elkanah" ><label for="id6c">elkanah</label><br>
-                    <input type="radio" name="samuel" id="id6d" value="eli" ><label for="id6d">eli</label> <br>
-                </div>
-
-            </section>
-            <section class="section7">
-                <p id="Q7">
-                    7.Which of the following was not Job's friend ?
-                </p>
-                <div id="optionsForQ7">
-                    <input type="radio" name="Job" id="id7a" value="eliphaz"><label for="id7a">eliphaz</label> <br>
-                    <input type="radio" name="Job" id="id7b" value="teman"><label for="id7b">teman</label> <br>
-                    <input type="radio" name="job" id="id7c" value="bildad" ><label for="id7c">bildad</label><br>
-                    <input type="radio" name="job" id="id7d" value="zophar" ><label for="id7d">zophar</label> <br>
-                </div>
-            </section>
-            <section class="section8">
-                <p id="Q8">
-                    8.Which of the following is the longest psalms?
-                </p>
-                <div id="optionsForQ8">
-                    <input type="radio" name="psalms" id="id8a" value="psalms19"><label for="id8a">psalms 19</label> <br>
-                    <input type="radio" name="psalms" id="id8b" value="psalms117"><label for="id8b">psalms 117</label> <br>
-                    <input type="radio" name="psalms" id="id8c" value="psalms119" ><label for="id8c">psalms 119</label><br>
-                    <input type="radio" name="psalms" id="id8d" value="psalms17" ><label for="id8d">psalms 17</label> <br>
-                </div>
-            </section>
-            <section class="section9">
-                <p id="Q9">
-                    9."For I am only a youth" these are the words of ?
-                </p>
-                <div id="optionsForQ9">
-                    <input type="radio" name="words" id="id9a" value="isaiah"><label for="id9a">isaiah</label> <br>
-                    <input type="radio" name="words" id="id9b" value="hosea"><label for="id9b">hosea</label> <br>
-                    <input type="radio" name="words" id="id9c" value="jeremiah" ><label for="id9c">jeremiah</label><br>
-                    <input type="radio" name="words" id="id9d" value="jonah" ><label for="id9d">jonah</label> <br>
-                </div>
-            </section>
-            <section class="section10">
-                <p id="Q10">
-                    10. Which of the following is not a gift of the Spirit?
-                </p>
-                <div id="optionsForQ10">
-                    <input type="radio" name="gift" id="id10a" value="faith"><label for="id10a">faith</label> <br>
-                    <input type="radio" name="gift" id="id1ob" value="healing"><label for="id1ob">healing</label> <br>
-                    <input type="radio" name="gift" id="id10c" value="knowledge" ><label for="id10c">knowledge</label><br>
-                    <input type="radio" name="gift" id="id10d" value="word of wisdom" ><label for="id10d">word of wisdom</label> <br>
-                </div>
-            </section>
-            <button type="submit" id="button">submit</button>
-        </article>
+        <h1>Welcome To Bible Quiz</h1>
+        <button><a href="./quiz.html">Start</a></button>
     </main>
     <footer>
         <p> &COPY; Vic-Ruro <br> May 2023 </p>
     </footer>
-    
 </body>
 </html>
