@@ -18,7 +18,7 @@ header{
     padding-bottom: 4px;
     position: fixed;
     padding-top: 5px;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 header h1, header h6{
     text-align: center;
@@ -58,8 +58,13 @@ section{
     
     
 }
-
-article p{
+section > p{
+    margin: 0px ;
+    margin-top: 2px;
+    padding-bottom: 0px;
+    
+}
+article .para{
     font-weight: bolder;
     margin-bottom: 10px;
     text-align:center;
@@ -68,7 +73,14 @@ article p{
 article label{
     text-transform: capitalize;
 }
-article  button{
+.button-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    row-gap: 10px;
+}
+button{
+    margin-left: 5px;
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
