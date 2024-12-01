@@ -28,17 +28,23 @@ function gettingSelectedOptions () {
     let some = Object.entries(question).map(element => {
         // getting the section element
         let realInput =element[1].childNodes;
+        
         // getting the options container and the options
         let getOptions =realInput[3].childNodes ;
-        let getInputOptions= [getOptions[0],getOptions[1],getOptions[6], getOptions[11], getOptions[15]];
+       
+        let getInputOptions= [getOptions[1],getOptions[6], getOptions[11], getOptions[15]];
+        console.log(getOptions[3]);
         let filteredOption = getInputOptions.filter(value =>{
             if (getOptions[1].checked ===false && getOptions[6].checked===false && getOptions[11].checked===false && getOptions[15].checked===false) {
                 return value;
+                // let valueChecked =value.checked  ;
+                // return valueChecked===true
             } else {
                 let valueChecked =value.checked  ;
                 return valueChecked===true
             }
         })
+        // console.log(filteredOption[0]);
         return filteredOption[0].value
     });
     return some
